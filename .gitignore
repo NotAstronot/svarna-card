@@ -1,4 +1,4 @@
 # Abaikan folder virtual environment
 venv/
 .venv/
-*.claude
+*..claude
