@@ -1,2 +1,2 @@
 # Abaikan .claude
-*.svarna/claude/settings.local.json
+*.claude
