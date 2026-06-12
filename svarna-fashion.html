@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svarna Fashion — Premium Fashion Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="svarna-fashion.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__brand">SVARNA</div>
+    <div class="loader__bar"><div class="loader__progress"></div></div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-text">SVARNA</span>
+        <span class="nav__logo-sub">FASHION</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#home" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="#collection" class="nav__link">Collection</a></li>
+        <li><a href="#categories" class="nav__link">Categories</a></li>
+        <li><a href="#trending" class="nav__link">Trending</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="nav__icon" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="nav__icon" aria-label="Wishlist"><i class="fa-solid fa-heart"></i><span class="nav__badge">3</span></button>
+        <button class="nav__icon" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="nav__badge">2</span></button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#trending">Trending</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__parallax-bg">
+      <div class="hero__layer hero__layer--1"></div>
+      <div class="hero__layer hero__layer--2"></div>
+      <div class="hero__layer hero__layer--3"></div>
+    </div>
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content">
+      <span class="hero__label" data-animate="fade-up">New Collection 2026</span>
+      <h1 class="hero__title" data-animate="fade-up" data-delay="200">
+        <span>Define Your</span>
+        <span class="hero__title--accent">Elegance</span>
+      </h1>
+      <p class="hero__desc" data-animate="fade-up" data-delay="400">
+        Discover premium fashion that speaks sophistication. Curated collections for the modern, confident you.
+      </p>
+      <div class="hero__cta" data-animate="fade-up" data-delay="600">
+        <a href="#collection" class="btn btn--primary">
+          <span>Shop Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#about" class="btn btn--outline">Our Story</a>
+      </div>
+      <div class="hero__stats" data-animate="fade-up" data-delay="800">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="500">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Products</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="120">0</span><span class="hero__stat-plus">K</span>
+          <span class="hero__stat-label">Customers</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="50">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Awards</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image" data-animate="fade-left" data-delay="400">
+      <div class="hero__image-frame">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=800&fit=crop" alt="Fashion Model" loading="eager">
+      </div>
+      <div class="hero__float-card hero__float-card--1">
+        <i class="fa-solid fa-star"></i>
+        <span>4.9 Rating</span>
+      </div>
+      <div class="hero__float-card hero__float-card--2">
+        <i class="fa-solid fa-truck-fast"></i>
+        <span>Free Shipping</span>
+      </div>
+    </div>
+    <a href="#collection" class="hero__scroll" aria-label="Scroll Down">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Premium Quality</span><span class="marquee__dot">✦</span>
+      <span>Handcrafted</span><span class="marquee__dot">✦</span>
+      <span>Sustainable Fashion</span><span class="marquee__dot">✦</span>
+      <span>Exclusive Design</span><span class="marquee__dot">✦</span>
+      <span>Worldwide Shipping</span><span class="marquee__dot">✦</span>
+      <span>Premium Quality</span><span class="marquee__dot">✦</span>
+      <span>Handcrafted</span><span class="marquee__dot">✦</span>
+      <span>Sustainable Fashion</span><span class="marquee__dot">✦</span>
+      <span>Exclusive Design</span><span class="marquee__dot">✦</span>
+      <span>Worldwide Shipping</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- Collection Section -->
+  <section class="section collection" id="collection">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Our Collection</span>
+        <h2 class="section__title">Featured Products</h2>
+        <p class="section__desc">Handpicked pieces from our latest collection, designed for those who appreciate fine craftsmanship.</p>
+      </div>
+      <div class="collection__filters" data-animate="fade-up" data-delay="200">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="dress">Dresses</button>
+        <button class="filter-btn" data-filter="top">Tops</button>
+        <button class="filter-btn" data-filter="bottom">Bottoms</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+      <div class="collection__track">
+        <div class="collection__grid">
+          <article class="product-card" data-category="dress">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&h=650&fit=crop" alt="Silk Evening Gown" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+              <span class="product-card__tag">New</span>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Dresses</span>
+              <h3 class="product-card__name">Silk Evening Gown</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span>(48)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$289.00</span>
+                <span class="product-card__price-old">$350.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="top">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=500&h=650&fit=crop" alt="Cashmere Blazer" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+              <span class="product-card__tag product-card__tag--sale">-30%</span>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tops</span>
+              <h3 class="product-card__name">Cashmere Blazer</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <span>(72)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$199.00</span>
+                <span class="product-card__price-old">$285.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="bottom">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=650&fit=crop" alt="Tailored Trousers" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Bottoms</span>
+              <h3 class="product-card__name">Tailored Trousers</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                <span>(35)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$145.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="accessories">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=500&h=650&fit=crop" alt="Leather Tote Bag" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+              <span class="product-card__tag">Best Seller</span>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Accessories</span>
+              <h3 class="product-card__name">Leather Tote Bag</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <span>(128)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$220.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="dress">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=650&fit=crop" alt="Floral Midi Dress" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Dresses</span>
+              <h3 class="product-card__name">Floral Midi Dress</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span>(64)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$175.00</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="top">
+            <div class="product-card__image">
+              <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&h=650&fit=crop" alt="Oversized Linen Shirt" loading="lazy">
+              <div class="product-card__overlay">
+                <button class="product-card__action" aria-label="Add to wishlist"><i class="fa-solid fa-heart"></i></button>
+                <button class="product-card__action" aria-label="Quick view"><i class="fa-solid fa-eye"></i></button>
+                <button class="product-card__action" aria-label="Add to cart"><i class="fa-solid fa-bag-shopping"></i></button>
+              </div>
+              <span class="product-card__tag product-card__tag--sale">-20%</span>
+            </div>
+            <div class="product-card__info">
+              <span class="product-card__category">Tops</span>
+              <h3 class="product-card__name">Oversized Linen Shirt</h3>
+              <div class="product-card__rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                <span>(41)</span>
+              </div>
+              <div class="product-card__price">
+                <span class="product-card__price-current">$89.00</span>
+                <span class="product-card__price-old">$112.00</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="collection__more" data-animate="fade-up">
+        <a href="#" class="btn btn--primary btn--large">
+          <span>View All Products</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Banner -->
+  <section class="parallax-banner">
+    <div class="parallax-banner__bg" data-parallax-speed="0.4"></div>
+    <div class="parallax-banner__content" data-animate="fade-up">
+      <span class="parallax-banner__label">Limited Edition</span>
+      <h2 class="parallax-banner__title">Summer<br>Collection 2026</h2>
+      <p class="parallax-banner__desc">Embrace the warmth with our exclusive summer pieces. Lightweight fabrics, vibrant colors, effortless style.</p>
+      <a href="#collection" class="btn btn--light">
+        <span>Explore Collection</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories" id="categories">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Browse By</span>
+        <h2 class="section__title">Categories</h2>
+      </div>
+      <div class="categories__grid">
+        <a href="#" class="category-card" data-animate="fade-up" data-delay="100">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&h=600&fit=crop" alt="Women" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Women</h3>
+            <span class="category-card__count">248 Products</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-animate="fade-up" data-delay="200">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" alt="Men" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Men</h3>
+            <span class="category-card__count">186 Products</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-animate="fade-up" data-delay="300">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=600&fit=crop" alt="Accessories" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Accessories</h3>
+            <span class="category-card__count">124 Products</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+        <a href="#" class="category-card" data-animate="fade-up" data-delay="400">
+          <div class="category-card__image">
+            <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=600&fit=crop" alt="Footwear" loading="lazy">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Footwear</h3>
+            <span class="category-card__count">92 Products</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending / Showcase Section -->
+  <section class="section trending" id="trending">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">What's Hot</span>
+        <h2 class="section__title">Trending Now</h2>
+      </div>
+      <div class="trending__showcase">
+        <div class="trending__main" data-animate="fade-right">
+          <div class="trending__main-image">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&h=1000&fit=crop" alt="Editor's Pick" loading="lazy">
+          </div>
+          <div class="trending__main-content">
+            <span class="trending__badge">Editor's Pick</span>
+            <h3 class="trending__main-title">The Art of Minimalism</h3>
+            <p class="trending__main-desc">Less is more. Discover our curated minimalist collection that proves simplicity is the ultimate sophistication.</p>
+            <a href="#" class="btn btn--primary">
+              <span>Shop the Look</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="trending__side">
+          <div class="trending__item" data-animate="fade-left" data-delay="100">
+            <div class="trending__item-image">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&h=500&fit=crop" alt="Street Style" loading="lazy">
+            </div>
+            <div class="trending__item-content">
+              <span class="trending__item-tag">Street Style</span>
+              <h4>Urban Essentials</h4>
+              <span class="trending__item-price">From $79</span>
+            </div>
+          </div>
+          <div class="trending__item" data-animate="fade-left" data-delay="200">
+            <div class="trending__item-image">
+              <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=500&fit=crop" alt="Evening Wear" loading="lazy">
+            </div>
+            <div class="trending__item-content">
+              <span class="trending__item-tag">Evening Wear</span>
+              <h4>Gala Collection</h4>
+              <span class="trending__item-price">From $199</span>
+            </div>
+          </div>
+          <div class="trending__item" data-animate="fade-left" data-delay="300">
+            <div class="trending__item-image">
+              <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=400&h=500&fit=crop" alt="Casual Chic" loading="lazy">
+            </div>
+            <div class="trending__item-content">
+              <span class="trending__item-tag">Casual Chic</span>
+              <h4>Weekend Luxe</h4>
+              <span class="trending__item-price">From $59</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Parallax -->
+  <section class="section testimonials">
+    <div class="testimonials__parallax-bg" data-parallax-speed="0.3"></div>
+    <div class="container">
+      <div class="section__header section__header--light" data-animate="fade-up">
+        <span class="section__label">Testimonials</span>
+        <h2 class="section__title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials__slider" id="testimonial-slider">
+        <div class="testimonial-card testimonial-card--active" data-animate="fade-up">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"Svarna Fashion transformed my wardrobe. The quality is unmatched, and every piece feels like it was made just for me. Absolutely love it!"</p>
+          <div class="testimonial-card__author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah" loading="lazy">
+            <div>
+              <strong>Sarah Johnson</strong>
+              <span>Fashion Blogger</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-card__text">"The attention to detail is incredible. From packaging to the fabric quality, everything screams luxury. My go-to brand for special occasions."</p>
+          <div class="testimonial-card__author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Michael" loading="lazy">
+            <div>
+              <strong>Michael Chen</strong>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-card__text">"Fast shipping, beautiful packaging, and the clothes fit perfectly. Svarna has become my secret weapon for looking effortlessly stylish."</p>
+          <div class="testimonial-card__author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Emma" loading="lazy">
+            <div>
+              <strong>Emma Rodriguez</strong>
+              <span>Model</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__dots" id="testimonial-dots">
+        <button class="testimonials__dot testimonials__dot--active" data-index="0"></button>
+        <button class="testimonials__dot" data-index="1"></button>
+        <button class="testimonials__dot" data-index="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="100">
+          <div class="feature-card__icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3 class="feature-card__title">Free Shipping</h3>
+          <p class="feature-card__desc">Free worldwide shipping on all orders over $150. Fast and reliable delivery.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="200">
+          <div class="feature-card__icon"><i class="fa-solid fa-rotate-left"></i></div>
+          <h3 class="feature-card__title">Easy Returns</h3>
+          <p class="feature-card__desc">30-day hassle-free returns. No questions asked, full refund guaranteed.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="300">
+          <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="feature-card__title">Secure Payment</h3>
+          <p class="feature-card__desc">Your payment information is always protected with 256-bit encryption.</p>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="400">
+          <div class="feature-card__icon"><i class="fa-solid fa-headset"></i></div>
+          <h3 class="feature-card__title">24/7 Support</h3>
+          <p class="feature-card__desc">Round-the-clock customer support. We're here whenever you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__images" data-animate="fade-right">
+          <div class="about__image about__image--1">
+            <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=500&h=600&fit=crop" alt="Our Atelier" loading="lazy">
+          </div>
+          <div class="about__image about__image--2">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&h=600&fit=crop" alt="Craftsmanship" loading="lazy">
+          </div>
+        </div>
+        <div class="about__content" data-animate="fade-left">
+          <span class="section__label">Our Story</span>
+          <h2 class="section__title">Crafting Elegance<br>Since 2018</h2>
+          <p class="about__text">Svarna Fashion was born from a passion for timeless elegance and modern design. Every piece in our collection is meticulously crafted using premium materials sourced from the finest suppliers around the world.</p>
+          <p class="about__text">We believe fashion is more than clothing — it's a form of self-expression. Our mission is to empower individuals to feel confident and beautiful in what they wear.</p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num">8+</span>
+              <span class="about__stat-label">Years of Excellence</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">50+</span>
+              <span class="about__stat-label">Countries Served</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">100%</span>
+              <span class="about__stat-label">Sustainable</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter__parallax-bg" data-parallax-speed="0.5"></div>
+    <div class="container">
+      <div class="newsletter__content" data-animate="fade-up">
+        <span class="section__label">Stay Updated</span>
+        <h2 class="newsletter__title">Join Our Newsletter</h2>
+        <p class="newsletter__desc">Subscribe to get exclusive offers, early access to new collections, and style tips delivered to your inbox.</p>
+        <form class="newsletter__form" id="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn--primary">
+            <span>Subscribe</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Get In Touch</span>
+        <h2 class="section__title">Contact Us</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info" data-animate="fade-right">
+          <div class="contact__item">
+            <div class="contact__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>123 Fashion Avenue, Suite 500<br>New York, NY 10001</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@svarnafashion.com</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <div class="contact__icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact__socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <form class="contact__form" data-animate="fade-left" id="contact-form">
+          <div class="contact__form-row">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" placeholder="Subject" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn--primary btn--large">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <span class="footer__logo-text">SVARNA</span>
+            <span class="footer__logo-sub">FASHION</span>
+          </a>
+          <p class="footer__desc">Premium fashion for the modern individual. Crafting elegance since 2018.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Svarna Fashion. All rights reserved.</p>
+        <div class="footer__payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Chatbot -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot__window" id="chatbot-window">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <i class="fa-solid fa-headset"></i>
+          <span>Svarna Assistant</span>
+        </div>
+        <button class="chatbot__close" id="chatbot-close" aria-label="Close chat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="chatbot__messages" id="chatbot-messages">
+        <div class="chatbot__msg chatbot__msg--bot">
+          <p>Halo! 👋 Selamat datang di Svarna Fashion. Ada yang bisa saya bantu?</p>
+        </div>
+      </div>
+      <div class="chatbot__quick">
+        <button class="chatbot__quick-btn" data-msg="Katalog terbaru">Katalog Terbaru</button>
+        <button class="chatbot__quick-btn" data-msg="Cara pemesanan">Cara Pesan</button>
+        <button class="chatbot__quick-btn" data-msg="Lacak pesanan">Lacak Pesanan</button>
+      </div>
+      <form class="chatbot__input" id="chatbot-form">
+        <input type="text" id="chatbot-input" placeholder="Ketik pesan..." autocomplete="off">
+        <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+    <button class="chatbot__toggle" id="chatbot-toggle" aria-label="Open chat">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span class="chatbot__badge">1</span>
+    </button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    if (typeof gsap !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero image — drop in from top like a sale catalog
+      gsap.fromTo(".hero__image",
+        { yPercent: -20, opacity: 0 },
+        { yPercent: 0, opacity: 1, duration: 1.2, ease: "back.out(1.4)", delay: 0.5, clearProps: "transform" }
+      );
+
+      // Collection cards — infinite marquee right to left
+      (function() {
+        const grid = document.querySelector('.collection__grid');
+        const originalCards = Array.from(grid.querySelectorAll('.product-card'));
+        const gap = parseFloat(getComputedStyle(grid).gap) || 0;
+
+        // Clone cards for seamless loop
+        originalCards.forEach(card => grid.appendChild(card.cloneNode(true)));
+
+        // Total width of one complete set (cards + gaps)
+        const setWidth = originalCards.reduce((sum, c) => sum + c.offsetWidth, 0)
+          + (originalCards.length - 1) * gap;
+
+        function marquee() {
+          gsap.fromTo(grid,
+            { x: 0 },
+            {
+              x: -setWidth,
+              duration: 30,
+              ease: "none",
+              onComplete: function() {
+                gsap.set(grid, { x: 0 });
+                marquee();
+              }
+            }
+          );
+        }
+        marquee();
+      })();
+    }
+
+    // --- Chatbot ---
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWindow = document.getElementById('chatbot-window');
+    const chatbotClose = document.getElementById('chatbot-close');
+    const chatbotForm = document.getElementById('chatbot-form');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotBadge = document.querySelector('.chatbot__badge');
+    const quickBtns = document.querySelectorAll('.chatbot__quick-btn');
+
+    const botReplies = {
+      'katalog terbaru': 'Koleksi terbaru kami sudah tersedia! Silakan gulir ke bagian "Our Collection" atau klik "Shop Now" di atas. 🛍️',
+      'cara pemesanan': 'Pemesanan mudah: 1) Pilih produk, 2) Klik ikon keranjang, 3) Checkout dan isi data pengiriman. Kami menerima semua metode pembayaran! 💳',
+      'lacak pesanan': 'Untuk melacak pesanan, silakan masukkan nomor pesanan Anda atau hubungi kami di hello@svarna.com 📦',
+      'default': 'Terima kasih atas pesan Anda! Tim kami akan segera merespon. Untuk bantuan cepat, silakan gunakan tombol cepat di bawah. 😊'
+    };
+
+    function addMessage(text, isUser) {
+      const msg = document.createElement('div');
+      msg.className = 'chatbot__msg ' + (isUser ? 'chatbot__msg--user' : 'chatbot__msg--bot');
+      const p = document.createElement('p');
+      p.textContent = text;
+      msg.appendChild(p);
+      chatbotMessages.appendChild(msg);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    function getBotReply(userMsg) {
+      const lower = userMsg.toLowerCase();
+      for (const [key, reply] of Object.entries(botReplies)) {
+        if (key !== 'default' && lower.includes(key)) return reply;
+      }
+      return botReplies['default'];
+    }
+
+    chatbotToggle.addEventListener('click', () => {
+      chatbotWindow.classList.toggle('open');
+      chatbotBadge.style.display = 'none';
+    });
+
+    chatbotClose.addEventListener('click', () => {
+      chatbotWindow.classList.remove('open');
+    });
+
+    chatbotForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const text = chatbotInput.value.trim();
+      if (!text) return;
+      addMessage(text, true);
+      chatbotInput.value = '';
+      setTimeout(() => addMessage(getBotReply(text), false), 800);
+    });
+
+    quickBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const text = btn.dataset.msg;
+        addMessage(text, true);
+        setTimeout(() => addMessage(getBotReply(text), false), 800);
+      });
+    });
+  </script>
+  <script src="svarna-fashion.js"></script>
+</body>
+</html>
